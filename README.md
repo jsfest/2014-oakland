@@ -13,5 +13,6 @@ The CFP will be in another repository that is entirely public.
 * Rod Vagg @rvagg
 * Bryce Baril @brycebaril
 * Max Ogden @maxogden
+* Jose Lopez @dashr 
 
 If you'd like to add addtional staff and organizers use #1.
