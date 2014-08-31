@@ -16,3 +16,13 @@ The CFP will be in another repository that is entirely public.
 * Jose Lopez @dashr 
 
 If you'd like to add addtional staff and organizers use #1.
+
+# Dates
+
+December 7th - 13th
+
+# Tickets and Events
+
+Tickets will be sold for "all access" to the events. Events are anywhere from 3 to 9 hours long.
+
+We're going to avoid catering and just do big breaks for lunch.
