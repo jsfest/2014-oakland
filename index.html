@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/blink.css">
     <style>
       .event {
         height: 200px;
@@ -54,7 +55,7 @@
       <header role="banner">
         <h1><span>JS</span>Fest</h1>
         <p class="lead">Join us December 7th - 13th in Oakland for week of JS events presented by the community.</p>
-        <p class="lead">Early bird tickets on sale now.</p>
+        <p class="lead"><a href="https://ti.to/jsfest/oakland">Early bird tickets on sale now.</a></p>
       </header>
 
       <div class="cf" role="main">
@@ -65,13 +66,27 @@
             <img src="img/oneshot.png">
           </div>
           <div class="event-sec">
-            <div class="dhtmlconf">DHTMLConf</div>
-            <h2>2000</h2>
+            <div class="dhtmlconf"><blink>DHTMLConf</blink></div>
+            <h2><marquee>2000</marquee></h2>
           </div>
           <div class="event-sec">
             <img src="img/cssconf.png">
           </div>
         </section>
+
+
+
+        <!-- <section class="event cf">
+          <div class="event-sec">
+            <img src="https://raw.githubusercontent.com/nodeschool/nodeschool.github.io/master/images/nodeschool-hex.png">
+          </div>
+          <div class="event-sec">
+            Nothing is Sacred
+          </div>
+          <div class="event-sec">
+            NodeBaseConf
+          </div>
+        </section> -->
 
         <section class="event cf">
           <div class="event-sec">
@@ -102,6 +117,8 @@
 
     </div>
     <!-- container -->
+    <script src="https://gist.githubusercontent.com/remy/2484402/raw/9e046d538ed42b87e5a5396e166c91083526958c/gistfile1.js"></script>
+    <script>$('marquee').marquee(optionalClass);</script>
 
   </body>
 

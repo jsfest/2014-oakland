@@ -1,0 +1,106 @@
+@keyframes "blink" {
+ 0% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+     filter: alpha(opacity=100);
+    opacity: 1.0;
+ }
+ 50% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0.0;
+ }
+ 100% {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1.0;
+ }
+
+}
+
+@-moz-keyframes blink {
+ 0% {
+   filter: alpha(opacity=100);
+   opacity: 1.0;
+ }
+ 50% {
+   filter: alpha(opacity=0);
+   opacity: 0.0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1.0;
+ }
+
+}
+
+@-webkit-keyframes "blink" {
+ 0% {
+   filter: alpha(opacity=100);
+   opacity: 1.0;
+ }
+ 50% {
+   filter: alpha(opacity=0);
+   opacity: 0.0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1.0;
+ }
+
+}
+
+@-ms-keyframes "blink" {
+ 0% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1.0;
+ }
+ 50% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 0.0;
+ }
+ 100% {
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   filter: alpha(opacity=100);
+   opacity: 1.0;
+ }
+
+}
+
+@-o-keyframes "blink" {
+ 0% {
+   filter: alpha(opacity=100);
+   opacity: 1.0;
+ }
+ 50% {
+   filter: alpha(opacity=0);
+   opacity: 0.0;
+ }
+ 100% {
+   filter: alpha(opacity=100);
+   opacity: 1.0;
+ }
+
+}
+
+blink {
+    -webkit-animation-name: blink;
+    -moz-animation-name: blink;
+    -ms-animation-name: blink;
+    -o-animation-name: blink;
+    animation-name: blink;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-timing-function: steps(1);
+    -moz-animation-timing-function: steps(1);
+    -ms-animation-timing-function: steps(1);
+    -o-animation-timing-function: steps(1);
+    animation-timing-function: steps(1);
+    -webkit-animation-duration: 1s;
+}
