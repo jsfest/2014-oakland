@@ -12,6 +12,7 @@
 
     <link rel="icon" type="image/png" href="favicon.png">
 
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//use.typekit.net/okx6joz.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/blink.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
       .event {
         height: 200px;
@@ -56,6 +58,37 @@
         height:70px;
         padding-top:10px;
       }
+      div.person {
+        width:18%;
+        margin: 1% 1% 1% 1%;
+        box-sizing: border-box;
+        position: relative;
+        box-sizing: border-box;
+        /*background-repeat: no-repeat;*/
+        background-position: right top;
+        border: 5px solid #FFEB00;
+        float:left;
+      }
+
+      section.featuring {
+
+      }
+
+      div.person:hover {
+        background: #FFEB00 no-repeat fixed center !important;
+      }
+
+      div.person-info {
+        display:none;
+        font-family: "ff-meta-serif-web-pro",Georgia,Times,serif;
+      }
+      div.person:hover div.person-info {
+        display:block;
+      }
+      p.social {
+        font-size:120%;
+      }
+
     </style>
   </head>
 
@@ -109,6 +142,60 @@
             <img src="https://avatars3.githubusercontent.com/u/6209470">
           </div>
         </section>
+
+        <section class="featuring">
+          <div class="person" style="background:url('https://avatars1.githubusercontent.com/u/579?s=200')">
+            <div class="person-info">
+              <p>Mikeal Rogers</p>
+              <p class="social">
+                <a href="https://github.com/mikeal"><i class="fa fa-github"></i></a> •
+                <a href="https://twitter.com/mikeal"><i class="fa fa-twitter"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="person" style="background:url('https://avatars3.githubusercontent.com/u/341305?s=200')">
+            <div class="person-info">
+              <p>Jenn Schiffer</p>
+              <p class="social">
+                <a href="https://github.com/jennschiffer"><i class="fa fa-github"></i></a> •
+                <a href="https://twitter.com/jennschiffer"><i class="fa fa-twitter"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="person" style="background:url('https://avatars3.githubusercontent.com/u/126482?s=200')">
+            <div class="person-info">
+              <p>Bryce Baril</p>
+              <p class="social">
+                <a href="https://github.com/brycebaril"><i class="fa fa-github"></i></a> •
+                <a href="https://twitter.com/brycebaril"><i class="fa fa-twitter"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="person" style="background:url('https://avatars0.githubusercontent.com/u/495647?s=200')">
+            <div class="person-info">
+              <p>Rod Vagg</p>
+              <p class="social">
+                <a href="https://github.com/rvagg"><i class="fa fa-github"></i></a> •
+                <a href="https://twitter.com/rvagg"><i class="fa fa-twitter"></i></a>
+              </p>
+            </div>
+          </div>
+          <div class="person" style="background:url('https://avatars1.githubusercontent.com/u/301340?s=200')">
+            <div class="person-info">
+              <p>Jose Lopez</p>
+              <p class="social">
+                <a href="https://github.com/dashr"><i class="fa fa-github"></i></a> •
+                <a href=""><i class="fa fa-twitter"></i></a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <script>
+        var width = $('div.person').width()
+        $('div.person').height(width)
+        $('div.person').css('background-size', '100% 100%')
+        </script>
 
       </div>
 
