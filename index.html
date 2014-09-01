@@ -93,6 +93,27 @@
         font-size:230%;
       }
 
+      div.event-sec {
+        text-align:center;
+        vertical-align:middle;
+      }
+
+      div.event-info {
+        display:none;
+        width: 33.3333%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        padding-top:30px;
+        text-align:center;
+        vertical-align:middle;
+      }
+      div.event-sec:hover div.event-info {
+        display:block;
+        background:white;
+      }
+
+
     </style>
   </head>
 
@@ -111,13 +132,22 @@
         <section class="event cf">
           <div class="event-sec">
             <img src="img/oneshot.png">
+            <div class="event-info">
+              <a href="https://gist.github.com/mikeal/86920c314a9dd66db86b">NodeConf ONE-SHOT</a><br>Curated by Mikeal Rogers
+            </div>
           </div>
           <div class="event-sec">
             <div class="dhtmlconf"><blink>DHTMLConf</blink></div>
             <h2><marquee>2000</marquee></h2>
+            <div class="event-info">
+              <a href="http://dhtmlconf.com/">DHTMLConf</a><br>Curated by Jenn Schiffer
+            </div>
           </div>
           <div class="event-sec">
             <img src="img/cssconf.png">
+            <div class="event-info">
+              <a href="https://twitter.com/CSSConf">CSSConf</a><br>Curated by Karolina Szczur
+            </div>
           </div>
         </section>
 
@@ -126,24 +156,42 @@
         <section class="event cf">
           <div class="event-sec">
             <img src="https://raw.githubusercontent.com/nodeschool/nodeschool.github.io/master/images/nodeschool-hex.png">
+            <div class="event-info">
+              <a href="http://nodeschool.io/">NodeSchool</a><br>Organized by Oakland NodeSchool
+            </div>
           </div>
           <div class="event-sec">
             <img src="http://substack.net/images/oakjs.png">
+            <div class="event-info">
+              <a href="http://oaklandjs.com/">OaklandJS</a><br>Organized by OaklandJS
+            </div>
           </div>
           <div class="event-sec">
             <img src="https://camo.githubusercontent.com/91efd29b295508f065903c9229d8af869e3561fb/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f3935343236392f313033313231322f63396161306136632d306564362d313165332d383365612d6639333766613461356538662e706e67">
+            <div class="event-info">
+              <a href="http://nodebots.io/">NodeBots</a><br>Organized by Raquel Vélez
+            </div>
           </div>
         </section>
 
         <section class="event cf">
           <div class="event-sec">
             <img src="img/ginjs.png">
+            <div class="event-info">
+              <a href="http://ginjs.org/">GinJS</a><br>Organized by Mikeal Rogers
+            </div>
           </div>
           <div class="event-sec">
             <img class="whiskyjs" src="img/whiskyjs.png">
+            <div class="event-info">
+              WhiskyJS<br>Organized by Mikeal Rogers
+            </div>
           </div>
           <div class="event-sec">
             <img src="https://avatars3.githubusercontent.com/u/6209470">
+            <div class="event-info">
+              <a href="https://github.com/sushijs">SushiJS</a><br>Organized by Terin Stock
+            </div>
           </div>
         </section>
 
