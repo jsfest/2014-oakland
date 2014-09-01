@@ -113,13 +113,12 @@ span.oakland {
   color: #FFEB00;
 }
 
-div.dhtmlconf {
+.dhtmlconf {
   color: blue;
   font-size: 2rem;
   margin-top: 40px;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
-
 
 .event-sec {
   position: relative;
@@ -168,6 +167,27 @@ div.dhtmlconf {
   font-size: 1.75rem;
 }
 
+/*-------------------------------------------------------------------
+*
+* Sponsor
+*
+-------------------------------------------------------------------*/
+
+.sponsor {
+  margin-bottom: 20px;
+  padding: 0 20px 20px 20px;
+  border: 5px solid #FFEB00;
+}
+
+.sponsor ul {
+  padding-left: 40px;
+  text-align: left;
+  list-style: disc;
+}
+
+.sponsor ul ul {
+  list-style: square;
+}
 
 /*-------------------------------------------------------------------
 *
