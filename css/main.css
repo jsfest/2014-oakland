@@ -188,6 +188,16 @@ footer nav a {
   margin: 0 .3125rem;
 }
 
+.footnote {
+  margin-top: 3rem;
+  font-size: .9rem;
+}
+
+.footnote p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
 /*-------------------------------------------------------------------
 *
 * Mobile
