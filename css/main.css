@@ -107,64 +107,67 @@ ul {
 *
 -------------------------------------------------------------------*/
 
-.event {
+span.oakland {
+  font-family: 'Expletus Sans', cursive;
+  background-color: transparent;
+  color: #FFEB00;
+}
+
+div.dhtmlconf {
+  color: blue;
+  font-size: 2rem;
+  margin-top: 40px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+.event-sec {
   position: relative;
-  border: 5px solid black;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.event h2 {
-  margin-top: 0;
+.event-sec img {
+  max-width: 80%;
 }
 
-.event p {
-  margin: 0;
+.event-info {
+  padding-top: 60px;
 }
 
-.event-description {
-  padding: 1rem;
-  color: white;
-  background-color: black;
-}
-
-.event-description:before {
-  content: '';
-  display: inline-block;
+.event-info,
+.person-info {
+  display: none;
+  width: 100%;
   height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em;
-}
-
-.event-description-inner {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.event-description a {
-  color: white;
-}
-
-.event-past-badge {
-  display: inline-block;
-  margin-bottom: .5rem;
-  padding: .5rem 1rem;
-  background: red;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.event-past-badge,
-.photo-credit {
-  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
-}
-
-.photo-credit {
   position: absolute;
-  border: none;
-  color: white;
-  font-size: .8rem;
-  opacity: .8;
+  top: 0;
+  left: 0;
 }
+
+.event-sec:hover .event-info,
+.person:hover .person-info {
+  display: block;
+}
+
+.event-sec:hover .event-info {
+  background: white;
+}
+
+.person {
+  position: relative;
+  margin-bottom: 10px;
+  border: 3px solid #FFEB00;
+}
+
+.person-info {
+  background-color: #FFEB00;
+}
+
+.social {
+  font-size: 1.75rem;
+}
+
 
 /*-------------------------------------------------------------------
 *
@@ -191,6 +194,21 @@ footer nav a {
 *
 -------------------------------------------------------------------*/
 
+@media only screen and (max-width: 480px) {
+
+  .event-sec,
+  .person {
+    width: 60%;
+    margin: 0 auto 20px;
+    min-height: 150px;
+  }
+
+  .person-info {
+    padding-top: 30px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
   .container {
@@ -198,20 +216,12 @@ footer nav a {
   }
 
   header {
-    margin-top: 9rem;
+    margin: 9rem 0 7rem 0;
   }
 
-  .event img {
-    max-width: 100%;
-  }
-
-  .event-description {
-    margin-top: -.5rem;
-  }
-
-  .photo-credit {
-    top: .25rem;
-    left: .5rem;
+  .oakland {
+    display: none;
+    visibility: none;
   }
 
 }
@@ -221,6 +231,26 @@ footer nav a {
 * Desktop
 *
 -------------------------------------------------------------------*/
+
+@media screen and (min-width: 481px) {
+
+  .event-sec {
+    float: left;
+    width: 33%;
+  }
+
+  .person {
+    display: inline-block;
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .featuring {
+    text-align: center;
+  }
+
+}
 
 @media screen and (min-width: 769px) {
 
@@ -235,30 +265,6 @@ footer nav a {
 
   .lead {
     margin-bottom: 4rem;
-  }
-
-  .event {
-    height: 250px;
-    overflow: hidden;
-  }
-
-  .event img,
-  .event-description {
-    float: left;
-  }
-
-  .event img {
-    width: 60%;
-  }
-
-  .event-description {
-    width: 33.333%;
-    height: 100%;
-  }
-
-  .photo-credit {
-    bottom: .25rem;
-    left: .5rem;
   }
 
 }
