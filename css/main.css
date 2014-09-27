@@ -227,11 +227,6 @@ footer nav a {
 @media only screen and (max-width: 480px) {
 
   .event-sec,
-  .person {
-    width: 60%;
-    margin: 0 auto 20px;
-    min-height: 150px;
-  }
 
   .person-info {
     padding-top: 30px;
