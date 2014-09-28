@@ -22,7 +22,6 @@ body {
   font: 500 1.125rem/1.5 "ff-meta-serif-web-pro", Georgia, Times, serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  text-align: center;
 }
 
 ::-moz-selection {
@@ -64,6 +63,10 @@ a:hover {
 -------------------------------------------------------------------*/
 
 h1, h2, h3, h4, h5 {
+  margin: 30px 0;
+}
+
+h1, h2, h3, h4, h5, .tito-submit, .tito-ticket-name {
   font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
@@ -85,10 +88,7 @@ h1 span {
 h2 {
   font-size: 2rem;
   line-height: 1.2;
-}
-
-h3 {
-  font-size: 1.5rem;
+  text-align: center;
 }
 
 ul {
@@ -97,8 +97,66 @@ ul {
 }
 
 .lead {
-  font-size: 1.75rem;
   line-height: 1.25;
+}
+
+/*-------------------------------------------------------------------
+*
+* Header
+*
+-------------------------------------------------------------------*/
+
+header,
+footer {
+  text-align: center;
+}
+
+
+/*-------------------------------------------------------------------
+*
+* Button
+*
+-------------------------------------------------------------------*/
+
+.tito-submit {
+  float: right;
+  padding: 15px 25px;
+  border-radius: 3px;
+  line-height: 1;
+  border: none;
+  background-color: #FFEB00;
+}
+
+.tito-submit:hover {
+  background-color: #F7D600; 
+  color: inherit;
+}
+
+/*-------------------------------------------------------------------
+*
+* Tito Form
+*
+-------------------------------------------------------------------*/
+
+#tito-register-form {
+  padding: 20px;
+  border: 5px solid #FFEB00;
+}
+
+#tito-register-form,
+#tito-register-form li {
+  overflow: auto;
+}
+
+.tito-ticket-price,
+.tito-ticket-quantity.checkbox {
+  display: inline-block;
+}
+
+#tito-footer p {
+  margin-bottom: 0;
+  float: left;
+  font-size: .8rem;
 }
 
 /*-------------------------------------------------------------------
@@ -120,51 +178,34 @@ span.oakland {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.event-sec {
-  position: relative;
-  margin-bottom: 20px;
-  text-align: center;
+.event {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-top: 5px solid black;
 }
 
-.event-sec img {
-  max-width: 80%;
+.event h4 {
+  margin-bottom: 0;
 }
 
-.event-info {
-  padding-top: 60px;
+.event p:first-of-type {
+  margin-top: 0;
 }
 
-.event-info,
-.person-info {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+.event-date span {
+  font-weight: 200;
+  color: #999;
 }
 
-.event-sec:hover .event-info,
-.person:hover .person-info {
-  display: block;
+.event-person {
+  display: inline-block;
+  height: 54px;
+  width: 54px;
+  border: 2px solid #FFEB00;
 }
 
-.event-sec:hover .event-info {
-  background: white;
-}
-
-.person {
-  position: relative;
-  margin-bottom: 10px;
-  border: 3px solid #FFEB00;
-}
-
-.person-info {
-  background-color: #FFEB00;
-}
-
-.social {
-  font-size: 1.75rem;
+.event-person:hover {
+  opacity: .8;
 }
 
 /*-------------------------------------------------------------------
@@ -187,6 +228,13 @@ span.oakland {
 
 .sponsor ul ul {
   list-style: square;
+}
+
+.logo {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
 }
 
 /*-------------------------------------------------------------------
@@ -224,17 +272,48 @@ footer nav a {
 *
 -------------------------------------------------------------------*/
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
 
-  .event-sec,
-  .person {
-    width: 60%;
-    margin: 0 auto 20px;
-    min-height: 150px;
+  h3 {
+    font-size: 1.25rem; 
   }
 
-  .person-info {
-    padding-top: 30px;
+  .lead {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    height: 50px;
+    margin: 15px;
+  }
+
+  .logo img {
+    max-width: 100%;
+  }
+
+  .event-logo {
+    margin: 0 0 20px 0;
+  }
+
+  .event {
+    text-align: center;
+  }
+
+  .event-not-scheduled {
+    padding-bottom: 0;
+  }
+
+  .event-not-scheduled p {
+    margin-bottom: 0;
+  }
+
+  .tito-submit {
+    width: 100%;
+  }
+
+  .tito-ticket-name,
+  .tito-ticket-price {
+    font-size: .9rem;
   }
 
 }
@@ -246,7 +325,7 @@ footer nav a {
   }
 
   header {
-    margin: 9rem 0 7rem 0;
+    margin: 9rem 0 2rem 0;
   }
 
   .oakland {
@@ -264,20 +343,59 @@ footer nav a {
 
 @media screen and (min-width: 481px) {
 
-  .event-sec {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.75rem;
+  }
+
+  .logo {
+    height: 120px;
+    margin: 30px;
+  }
+  
+  .logo img {
+    width: 250px;
+  }
+
+  .event-date {
+    text-align: left;
+  }
+
+  .event-logo,
+  .event-description {
     float: left;
-    width: 33%;
   }
 
-  .person {
-    display: inline-block;
-    margin-right: 10px;
-    width: 150px;
-    height: 150px;
+  .event-logo {
+    margin: 0 50px 0 0;
   }
 
-  .featuring {
+  .event-not-scheduled {
+    border: none;
+    width: 50%;
+    float: left;
     text-align: center;
+  }
+
+  .event-not-scheduled .event-logo,
+  .event-not-scheduled .event-description {
+    float: none;
+  }
+
+  .event-not-scheduled .event-logo {
+    margin: 0;
+    display: block;
+  }
+
+  #tito-register-form label {
+    float: left;
+  }
+
+  .tito-ticket-price-quantity {
+    float: right;
   }
 
 }
@@ -290,7 +408,7 @@ footer nav a {
   }
 
   header {
-    margin-top: 11rem;
+    margin: 11rem 0 3rem 0;
   }
 
   .lead {
