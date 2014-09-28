@@ -119,6 +119,7 @@ header {
 -------------------------------------------------------------------*/
 
 a.button {
+  display: inline-block;
   padding: 15px 25px;
   border-radius: 3px;
   line-height: 1;
@@ -127,7 +128,7 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #FFF14C; 
+  background-color: #F7D600; 
   color: inherit;
 }
 
@@ -150,51 +151,15 @@ span.oakland {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.event-sec {
-  position: relative;
-  margin-bottom: 20px;
-  text-align: center;
+.event-date {
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
 }
 
-.event-sec img {
-  max-width: 80%;
-}
-
-.event-info {
-  padding-top: 60px;
-}
-
-.event-info,
-.person-info {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.event-sec:hover .event-info,
-.person:hover .person-info {
-  display: block;
-}
-
-.event-sec:hover .event-info {
-  background: white;
-}
-
-.person {
-  position: relative;
-  margin-bottom: 10px;
-  border: 3px solid #FFEB00;
-}
-
-.person-info {
-  background-color: #FFEB00;
-}
-
-.social {
-  font-size: 1.75rem;
+.event-date span {
+  font-weight: 200;
+  color: #999;
 }
 
 /*-------------------------------------------------------------------
@@ -217,6 +182,14 @@ span.oakland {
 
 .sponsor ul ul {
   list-style: square;
+}
+
+.logo {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
 }
 
 /*-------------------------------------------------------------------
@@ -254,14 +227,6 @@ footer nav a {
 *
 -------------------------------------------------------------------*/
 
-@media only screen and (max-width: 480px) {
-
-  .person-info {
-    padding-top: 30px;
-  }
-
-}
-
 @media screen and (max-width: 768px) {
 
   .container {
@@ -269,7 +234,7 @@ footer nav a {
   }
 
   header {
-    margin: 9rem 0 7rem 0;
+    margin: 9rem 0 2rem 0;
   }
 
   .oakland {
@@ -287,20 +252,8 @@ footer nav a {
 
 @media screen and (min-width: 481px) {
 
-  .event-sec {
-    float: left;
-    width: 33%;
-  }
-
-  .person {
-    display: inline-block;
-    margin-right: 10px;
-    width: 150px;
-    height: 150px;
-  }
-
-  .featuring {
-    text-align: center;
+  .event-date {
+    text-align: left;
   }
 
 }
