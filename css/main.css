@@ -22,7 +22,6 @@ body {
   font: 500 1.125rem/1.5 "ff-meta-serif-web-pro", Georgia, Times, serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  text-align: center;
 }
 
 ::-moz-selection {
@@ -63,6 +62,10 @@ a:hover {
 *
 -------------------------------------------------------------------*/
 
+h1, h2, h3, h4, h5 {
+  margin: 30px 0;
+}
+
 h1, h2, h3, h4, h5, .button {
   font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-weight: 800;
@@ -85,10 +88,7 @@ h1 span {
 h2 {
   font-size: 2rem;
   line-height: 1.2;
-}
-
-h3 {
-  font-size: 1.5rem;
+  text-align: center;
 }
 
 ul {
@@ -97,7 +97,6 @@ ul {
 }
 
 .lead {
-  font-size: 1.75rem;
   line-height: 1.25;
 }
 
@@ -107,8 +106,9 @@ ul {
 *
 -------------------------------------------------------------------*/
 
-header {
-  border-bottom: 5px solid black; 
+header,
+footer {
+  text-align: center;
 }
 
 
@@ -151,15 +151,34 @@ span.oakland {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-.event-date {
-  padding: 10px 20px;
-  color: white;
-  background-color: black;
+.event {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-top: 5px solid black;
+}
+
+.event h4 {
+  margin-bottom: 0;
+}
+
+.event p:first-of-type {
+  margin-top: 0;
 }
 
 .event-date span {
   font-weight: 200;
   color: #999;
+}
+
+.event-person {
+  display: inline-block;
+  height: 54px;
+  width: 54px;
+  border: 2px solid #FFEB00;
+}
+
+.event-person:hover {
+  opacity: .8;
 }
 
 /*-------------------------------------------------------------------
@@ -189,7 +208,6 @@ span.oakland {
   float: left;
   align-items: center;
   justify-content: center;
-  height: 120px;
 }
 
 /*-------------------------------------------------------------------
@@ -227,6 +245,43 @@ footer nav a {
 *
 -------------------------------------------------------------------*/
 
+@media screen and (max-width: 481px) {
+
+  h3 {
+    font-size: 1.25rem; 
+  }
+
+  .lead {
+    font-size: 1.4rem;
+  }
+
+  .logo {
+    height: 50px;
+    margin: 15px;
+  }
+
+  .logo img {
+    max-width: 100%;
+  }
+
+  .event-logo {
+    margin: 0 0 20px 0;
+  }
+
+  .event {
+    text-align: center;
+  }
+
+  .event-not-scheduled {
+    padding-bottom: 0;
+  }
+
+  .event-not-scheduled p {
+    margin-bottom: 0;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
   .container {
@@ -252,8 +307,51 @@ footer nav a {
 
 @media screen and (min-width: 481px) {
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .lead {
+    font-size: 1.75rem;
+  }
+
+  .logo {
+    height: 120px;
+    margin: 30px;
+  }
+  
+  .logo img {
+    width: 250px;
+  }
+
   .event-date {
     text-align: left;
+  }
+
+  .event-logo,
+  .event-description {
+    float: left;
+  }
+
+  .event-logo {
+    margin: 0 50px 0 0;
+  }
+
+  .event-not-scheduled {
+    border: none;
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+
+  .event-not-scheduled .event-logo,
+  .event-not-scheduled .event-description {
+    float: none;
+  }
+
+  .event-not-scheduled .event-logo {
+    margin: 0;
+    display: block;
   }
 
 }
@@ -266,7 +364,7 @@ footer nav a {
   }
 
   header {
-    margin-top: 11rem;
+    margin: 11rem 0 3rem 0;
   }
 
   .lead {
