@@ -128,7 +128,7 @@ footer {
 }
 
 .tito-submit:hover {
-  background-color: #F7D600; 
+  background-color: #F7D600;
   color: inherit;
 }
 
@@ -275,7 +275,7 @@ footer nav a {
 @media screen and (max-width: 481px) {
 
   h3 {
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
   }
 
   .lead {
@@ -355,7 +355,7 @@ footer nav a {
     height: 120px;
     margin: 30px;
   }
-  
+
   .logo img {
     width: 250px;
   }
