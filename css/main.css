@@ -214,6 +214,10 @@ span.oakland {
 *
 -------------------------------------------------------------------*/
 
+.sponsors {
+  text-align: center;
+}
+
 .sponsor {
   margin-bottom: 20px;
   padding: 0 20px 20px 20px;
@@ -231,10 +235,7 @@ span.oakland {
 }
 
 .logo {
-  display: flex;
-  float: left;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /*-------------------------------------------------------------------
@@ -333,6 +334,11 @@ footer nav a {
     visibility: none;
   }
 
+  .logo {
+    margin-bottom: 60px;
+    width: 200px;
+  }
+
 }
 
 /*-------------------------------------------------------------------
@@ -352,8 +358,8 @@ footer nav a {
   }
 
   .logo {
+    display: inline-block;
     height: 120px;
-    margin: 30px;
   }
 
   .logo img {
