@@ -280,15 +280,6 @@ footer nav a {
     margin-bottom: 0;
   }
 
-  .tito-submit {
-    width: 100%;
-  }
-
-  .tito-ticket-name,
-  .tito-ticket-price {
-    font-size: .9rem;
-  }
-
 }
 
 @media screen and (max-width: 768px) {
